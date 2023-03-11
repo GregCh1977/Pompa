@@ -18,6 +18,16 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{NodeId:ns=7;g=3666450f-d05d-0ec7-72e4-0d0a021971ab}"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
   - Name: Pump1
     Type: Button
     Children:
