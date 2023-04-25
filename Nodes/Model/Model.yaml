@@ -1,2 +1,8 @@
 Name: Model
 Type: FolderType
+Children:
+- Name: test
+  Id: g=95c35b4bcc468d974fbaf2865b81f394
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -5,7 +5,7 @@ Children:
   Type: TagStructure
   Children:
   - Name: timing
-    Type: TIMER
+    Type: TIMER1
     Children:
     - Name: ACC
       Type: RAEtherNetIPTag
@@ -53,7 +53,6 @@ Children:
         DataType: String
         Value: "timing.TT"
   - Name: pump2
-    Id: g=f62f165995aa05854f8390f6821d689e
     Type: RAEtherNetIPTag
     DataType: Boolean
     Value: false
@@ -63,7 +62,6 @@ Children:
       DataType: String
       Value: "pump2"
   - Name: pump1
-    Id: g=8ebe9368de3e13b0be491be68696a7e3
     Type: RAEtherNetIPTag
     DataType: Boolean
     Value: false
@@ -73,7 +71,7 @@ Children:
       DataType: String
       Value: "pump1"
   - Name: pierwsza_pompa
-    Type: COUNTER
+    Type: COUNTER1
     Children:
     - Name: ACC
       Type: RAEtherNetIPTag
@@ -148,7 +146,7 @@ Children:
       DataType: String
       Value: "up"
   - Name: druga_pompa
-    Type: COUNTER
+    Type: COUNTER1
     Children:
     - Name: ACC
       Type: RAEtherNetIPTag
@@ -223,7 +221,6 @@ Children:
       DataType: String
       Value: "down"
   - Name: tank_level
-    Id: g=3666450fd05d0ec772e40d0a021971ab
     Type: RAEtherNetIPTag
     DataType: Int32
     Value: 0
@@ -251,7 +248,7 @@ Children:
       DataType: String
       Value: "o"
   - Name: dowwwn
-    Type: COUNTER
+    Type: COUNTER1
     Children:
     - Name: ACC
       Type: RAEtherNetIPTag
@@ -317,7 +314,7 @@ Children:
         DataType: String
         Value: "dowwwn.UN"
   - Name: kr
-    Type: COUNTER
+    Type: COUNTER1
     Children:
     - Name: ACC
       Type: RAEtherNetIPTag
@@ -392,7 +389,7 @@ Children:
       DataType: String
       Value: "p"
   - Name: filing_alarm
-    Type: ALARM_DIGITAL
+    Type: ALARM_DIGITAL1
     Children:
     - Name: Acked
       Type: RAEtherNetIPTag
@@ -863,7 +860,7 @@ Children:
       DataType: String
       Value: "enablee"
   - Name: Za_duzo
-    Type: ALARM_ANALOG
+    Type: ALARM_ANALOG1
     Children:
     - Name: AckRequired
       Type: RAEtherNetIPTag
@@ -2000,7 +1997,7 @@ Children:
       DataType: String
       Value: "en"
   - Name: 'Local:1:C'
-    Type: 'AB:1756_IF4FXOF2F:C:01'
+    Type: TagStructure
     Children:
     - Name: In
       Type: TagStructureArray
@@ -2012,7 +2009,7 @@ Children:
         ArrayDimensions: [0]
         Value: [4]
       - Name: 0
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:01'
         Children:
         - Name: AlarmDeadband
           Type: RAEtherNetIPTag
@@ -2150,7 +2147,7 @@ Children:
             DataType: String
             Value: "Local:1:C.In[0].RateAlarmLimit"
       - Name: 1
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:01'
         Children:
         - Name: AlarmDeadband
           Type: RAEtherNetIPTag
@@ -2288,7 +2285,7 @@ Children:
             DataType: String
             Value: "Local:1:C.In[1].RateAlarmLimit"
       - Name: 2
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:01'
         Children:
         - Name: AlarmDeadband
           Type: RAEtherNetIPTag
@@ -2426,7 +2423,7 @@ Children:
             DataType: String
             Value: "Local:1:C.In[2].RateAlarmLimit"
       - Name: 3
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:C:01'
         Children:
         - Name: AlarmDeadband
           Type: RAEtherNetIPTag
@@ -2573,7 +2570,7 @@ Children:
         ArrayDimensions: [0]
         Value: [2]
       - Name: 0
-        Type: 'AB:1756_IF4FXOF2F_Struct_Out:C:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_Out:C:01'
         Children:
         - Name: AlarmDisable
           Type: RAEtherNetIPTag
@@ -2747,7 +2744,7 @@ Children:
             DataType: String
             Value: "Local:1:C.Out[0].Range"
       - Name: 1
-        Type: 'AB:1756_IF4FXOF2F_Struct_Out:C:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_Out:C:01'
         Children:
         - Name: AlarmDisable
           Type: RAEtherNetIPTag
@@ -2948,7 +2945,7 @@ Children:
         DataType: String
         Value: "Local:1:C.SynchModInputs"
   - Name: 'Local:1:I'
-    Type: 'AB:1756_IF4FXOF2F_CST:I:01'
+    Type: TagStructure
     Children:
     - Name: AnalogGroupFault
       Type: RAEtherNetIPTag
@@ -3007,7 +3004,7 @@ Children:
         ArrayDimensions: [0]
         Value: [4]
       - Name: 0
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:01'
         Children:
         - Name: CalFault
           Type: RAEtherNetIPTag
@@ -3109,7 +3106,7 @@ Children:
             DataType: String
             Value: "Local:1:I.In[0].Underrange"
       - Name: 1
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:01'
         Children:
         - Name: CalFault
           Type: RAEtherNetIPTag
@@ -3211,7 +3208,7 @@ Children:
             DataType: String
             Value: "Local:1:I.In[1].Underrange"
       - Name: 2
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:01'
         Children:
         - Name: CalFault
           Type: RAEtherNetIPTag
@@ -3313,7 +3310,7 @@ Children:
             DataType: String
             Value: "Local:1:I.In[2].Underrange"
       - Name: 3
-        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_In:I:01'
         Children:
         - Name: CalFault
           Type: RAEtherNetIPTag
@@ -3478,7 +3475,7 @@ Children:
         ArrayDimensions: [0]
         Value: [2]
       - Name: 0
-        Type: 'AB:1756_IF4FXOF2F_Struct_Out:I:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_Out:I:01'
         Children:
         - Name: CalFault
           Type: RAEtherNetIPTag
@@ -3571,7 +3568,7 @@ Children:
             DataType: String
             Value: "Local:1:I.Out[0].WireOff"
       - Name: 1
-        Type: 'AB:1756_IF4FXOF2F_Struct_Out:I:0'
+        Type: 'AB:1756_IF4FXOF2F_Struct_Out:I:01'
         Children:
         - Name: CalFault
           Type: RAEtherNetIPTag
@@ -3700,7 +3697,7 @@ Children:
         DataType: String
         Value: "Local:1:I.RollingTimestamp"
   - Name: 'Local:1:O'
-    Type: 'AB:1756_IF4FXOF2F:O:0'
+    Type: 'AB:1756_IF4FXOF2F:O:01'
     Children:
     - Name: Data
       Type: RAEtherNetIPTag

@@ -96,7 +96,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=3666450f-d05d-0ec7-72e4-0d0a021971ab}"
+          Value: "/Objects/Pompa/CommDrivers/RAEtherNet_IPDriver2/RAEtherNet_IPStation1/Tags/Controller Tags/tank_level"
     - Name: Pump1
       Type: Button
       Children:
@@ -136,7 +136,18 @@ Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: {"IdType":2,"Id":"8ebe9368de3e13b0be491be68696a7e3","Namespace":7}
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/Pompa/CommDrivers/RAEtherNet_IPDriver2/RAEtherNet_IPStation1/Tags/Controller Tags/pump1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
@@ -216,7 +227,18 @@ Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: {"IdType":2,"Id":"f62f165995aa05854f8390f6821d689e","Namespace":7}
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/Pompa/CommDrivers/RAEtherNet_IPDriver2/RAEtherNet_IPStation1/Tags/Controller Tags/pump2@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
@@ -257,5 +279,61 @@ Children:
             Type: PropertyType
             DataType: UInt16
             Value: 0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 215.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 118.0
+    - Name: TextBox2
+      Type: TextBox
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=95c35b4b-cc46-8d97-4fba-f2865b81f394}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Name: SpinBox1
+      Type: SpinBox
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Double
+        Value: 0.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=95c35b4b-cc46-8d97-4fba-f2865b81f394}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 168.0
 - File: Screens/Screens.yaml
 - File: Templates/Templates.yaml
